@@ -1,0 +1,25 @@
+<div
+class="max-w-md mx-auto flex-col p-6 bg-gray-100 mt-10 rounded-lg shadow-xl"
+>
+<div class="ml-6 pt-1">
+  <h4 class="text-xl text-gray-900 leading-tight">My Todo List</h4>
+  <p class="text-base text-gray-600 leading-normal">
+    A list of things I need to do today:
+  </p>
+</div>
+<form action="" class="flex mt-8">
+  <input
+    type="text"
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    placeholder="Add a new todo item..."
+    [(ngModel)]="todo"
+    name="todo"
+  />
+  <button
+    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    (click)="addTodo()"
+  >
+    Add
+  </button>
+</form>
+</div>

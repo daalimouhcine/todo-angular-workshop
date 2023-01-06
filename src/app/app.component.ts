@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'todo-angular-app';
-  todo: string = "";
-  todoList: Array<string> = new Array();
-
-
-  addTodo() {
-    this.todoList.push(this.todo);
-    this.todo = "";
-  }
+  inputValueTodo?:String = "";
 }
